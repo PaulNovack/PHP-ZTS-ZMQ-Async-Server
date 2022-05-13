@@ -5,11 +5,7 @@
 
 Listens on a ZMQ port and processes requests asynchronously
 
-### Must be running a ZTS build of php with parallel php extension 
 
-The easiest way to get PHP ZTS running is with a docker image and then add pecl install parallel
-
-Or you may compile PHP with ZTS and parallel extension enabled.
 
 Currently has an example for sending SQL commands asynchronously.
 
@@ -20,6 +16,13 @@ and a Worker Client class to send items to queue.
 
 NOTE!!:  The application will create folders data, logs,queueData above the project directory.  
 This is by intent to keep IDE from indexing the files will create a lot of files and slow IDE if you are using an IDE.
+
+### Must be running a ZTS build of php with parallel php extension
+
+* The easiest way to get PHP ZTS running is with a docker image and then add pecl install parallel
+
+* May compile PHP with ZTS and parallel extension enabled.
+
 
 ### Create new Workers 
 * Set the number of threads in Constructor
