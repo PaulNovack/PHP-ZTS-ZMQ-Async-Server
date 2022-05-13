@@ -61,7 +61,7 @@ class NDB
                 , $this->settings->DBReaderPassword
                 , $this->settings->DBReaderDatabaseName);
             $this->readerConnected = true;
-            $this->readerConn->query("use adserver");
+            $this->readerConn->query("use " . $this->settings->DBReaderDatabaseName);
             return true;
         } catch(Exception $e){
             file_put_contents(dirname(__FILE__,3) . "/logs/exception.log", $e->getMessage(), FILE_APPEND);
@@ -78,7 +78,7 @@ class NDB
                 , $this->settings->DBWriterPassword
                 , $this->settings->DBWriterDatabaseName);
             $this->writerConnected = true;
-            $this->writerConn->query("use adserver");
+            $this->writerConn->query("use " . $this->settings->DBWriterDatabaseName);
         } catch(Exception $e){
             file_put_contents(dirname(__FILE__,3) . "/logs/exception.log", $e->getMessage(), FILE_APPEND);
         }
