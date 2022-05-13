@@ -9,7 +9,7 @@ Listens on a ZMQ port and processes requests asynchronously
 
 Currently has an example for sending SQL commands asynchronously.
 
-ToDo:  Add an example for using this as a remove log collector.
+ToDo:  Add an example for using this as a remote log collector.
 
 Pluggable architecture allows adding of workers by simply adding a Worker Class
 and a Worker Client class to send items to queue.
