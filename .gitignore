@@ -1,0 +1,6 @@
+.idea
+data
+queueData
+.env.json
+
+/vendor/

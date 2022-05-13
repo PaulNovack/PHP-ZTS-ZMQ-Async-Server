@@ -1,0 +1,24 @@
+{
+    "name": "pnovack/php-zts-zmq-async-server",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Pnovack\\PhpZtsZmqAsyncServer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Paul Novack",
+            "email": "paul.novack@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "classes",
+            "loops",
+            "rpcs",
+            "Models"
+        ]
+    }
+}
