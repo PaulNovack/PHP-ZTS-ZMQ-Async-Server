@@ -5,11 +5,11 @@
 
 Listens on a ZMQ port and processes requests asynchronously
 
-###Must be running a ZTS build of php.  See ub20-zts-build.sh for a file that will compile php-zts on a fresh ubuntu 20 server
+### Must be running a ZTS build of php.  See ub20-zts-build.sh for a file that will compile php-zts on a fresh ubuntu 20 server (will add today)
 
 Currently has an example for sending SQL commands asynchronously.
 
-ToDo:  Add an example for using this as a remove log collector.
+ToDo:  Add an example for using this as a remote log collector.
 
 Pluggable architecture allows adding of workers by simply adding a Worker Class
 and a Worker Client class to send items to queue.
