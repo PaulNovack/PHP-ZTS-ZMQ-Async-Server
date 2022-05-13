@@ -36,7 +36,7 @@ for($runs = 0; $runs < $requestNumber; $runs++){
 $endTime = microtime(true);
 $ms = round(($endTime-$startTime)*1000);
 $micros = ($endTime-$startTime) * 1000000;
-echo "milliseconds to queue 50,000 SQL statements:". $ms . PHP_EOL;
+echo "milliseconds to queue 500,000 SQL statements:". $ms . PHP_EOL;
 echo "Microseconds per queue item : " .  floor($micros / ($requestNumber * 10)) . PHP_EOL;
 
 
