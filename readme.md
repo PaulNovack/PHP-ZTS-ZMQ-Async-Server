@@ -5,7 +5,7 @@
 
 Listens on a ZMQ port and processes requests asynchronously
 
-### Must be running a ZTS build of php.  See ub20-zts-build.sh for a file that will compile php-zts on a fresh ubuntu 20 server
+### Must be running a ZTS build of php.  See ub20-zts-build.sh for a file that will compile php-zts on a fresh ubuntu 20 server (will add today)
 
 Currently has an example for sending SQL commands asynchronously.
 
